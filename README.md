@@ -2,6 +2,8 @@
 
 Advies voor een eigen AI-assistent die thuis draait en die je vanaf je telefoon aanstuurt.
 Het leidende voorbeeld: **je spreekt een memo in → de assistent zet het om naar tekst → maakt er een samenvatting van → mailt die naar jou.**
+🌐 **Interactieve beslisboom:** https://veldepatrick-jpg.github.io/Efficient-AI-toepassen/ (broncode in [`site/`](site/), automatisch gepubliceerd via GitHub Actions).
+
 Onderaan staat een top 10 van praktijktoepassingen, zakelijk en privé.
 
 ---

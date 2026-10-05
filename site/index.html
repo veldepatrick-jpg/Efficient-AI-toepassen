@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jouw AI-assistent thuis</title>
+  <meta name="description" content="Beslisboom: welke persoonlijke AI-assistent bouw je op je thuiscomputer, bediend via je mobiel?">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Beslisboom · persoonlijke AI-assistent</p>
+      <h1>Welke AI-assistent bouw jij thuis?</h1>
+      <p class="lead">Spreek onderweg een memo in op je telefoon, je thuiscomputer maakt er een samenvatting van en mailt die naar je. Beantwoord een paar vragen en krijg een advies op maat: software, hardware, kosten en stappenplan.</p>
+      <div class="flow" aria-label="Werking van de assistent">
+        <span>📱 Spraakmemo</span><i>→</i><span>🏠 Thuiscomputer</span><i>→</i><span>📝 Tekst</span><i>→</i><span>🧠 Samenvatting</span><i>→</i><span>📧 Inbox</span>
+      </div>
+      <a class="btn primary" href="#boom">Start de beslisboom</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="boom" class="card tree-card" aria-live="polite">
+      <div class="progress" aria-hidden="true"><div id="progress-bar"></div></div>
+      <ol id="pad" class="pad" aria-label="Jouw antwoorden"></ol>
+      <div id="vraag"></div>
+      <div id="resultaat" hidden></div>
+    </section>
+
+    <section class="section">
+      <h2>Inspiratie: top 10 toepassingen</h2>
+      <p class="muted">Waar mensen deze opzet in de praktijk voor gebruiken.</p>
+      <div class="filters" role="group" aria-label="Filter toepassingen">
+        <button class="chip active" data-filter="alle">Alle</button>
+        <button class="chip" data-filter="zakelijk">Zakelijk</button>
+        <button class="chip" data-filter="prive">Privé</button>
+      </div>
+      <ol id="top10" class="top10"></ol>
+    </section>
+
+    <section class="section">
+      <details class="card overview">
+        <summary><h2>De hele beslisboom bekijken</h2></summary>
+        <div id="overzicht"></div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Broncode, Python-voorbeeld en uitgebreid advies staan in de <a href="https://github.com/veldepatrick-jpg/Efficient-AI-toepassen">GitHub-repository</a>. Prijzen en modellen zijn indicaties (oktober 2026).</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
